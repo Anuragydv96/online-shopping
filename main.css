@@ -1,0 +1,1060 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    position: relative;
+    top: 0;
+    left: 0;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular',
+                 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 60px;
+    background: rgb(19, 19, 47);
+    overflow: hidden;
+    z-index: 2;
+}
+
+.navbar .bname{
+    width: 130px;
+    height: 100%;
+    color: white;
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-left: 35px;
+    line-height: 55px;
+}
+
+.navbar input{
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: teal;
+    margin-left: 200px;
+    margin-top: 17px;
+    background: white;
+    border-top: none;
+    height: 26px;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid white;
+    outline: none;
+    cursor: pointer;
+
+}
+
+.navbar .nav-items{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+  
+}
+
+.navbar .nav-items ul{
+    width: 100%;
+    height: 100%;
+}
+.navbar .nav-items ul li{
+    display: inline;
+    float: right;
+    list-style: none;
+    margin: 20px;
+    margin-right: 25px;
+}
+.navbar .nav-items ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.navbar .nav-items ul li a:hover{
+    color: grey;
+    transition: 0.5s;
+}
+.navbar .nav{
+    color: red;
+    font-size: 30px;
+    position: absolute;
+    margin-right: 40px;
+    margin-top: 15px;
+    top: 0;
+    display: none;
+    right: 0;
+    cursor: pointer;
+}
+
+.search{
+    position: relative;
+    top:-63%;
+    color: white;
+    left: 30%;
+}
+
+
+.container{
+    position: relative;
+    top: 100%;
+    left: 0;
+    width: 1225px;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container .card{
+    position: relative;
+    width: 7500px;
+    animation: sani 25s infinite;
+}
+
+
+@keyframes sani{
+    0%{
+    left: 0px;    
+    }    
+    17%{
+        left:0px;
+    }
+    
+    34%{
+        left:-1250px
+    }
+    51%{
+        left: -2500px;
+    }
+    68%{
+        left:-3750px;
+    }
+    76%{
+        left: -5000px;
+    }
+    100%{
+        right:0px
+    }
+   
+}
+
+
+.container .card img{
+width: 1250px;
+height: 410px;
+}
+
+.cantainer2{
+    width: 100%;
+    height: 400px;
+    position: absolute;
+    top: 75%;
+    left: 0;
+    display: flex;
+}
+
+.cantainer2 label{
+    color: #000000;
+    margin-top: 15px;
+    font-weight: bold;
+    font-size: 25px;
+    margin-left: 25px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.cantainer2 .card{
+    position: relative;
+    top: 15%;
+    left: 0%;
+    width: 300px;
+    height: 300px;
+    background: rgba(90, 73, 73, 0.883);
+    margin: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: 0px 5px 10px 8px rgb(0,0,0,0.3);
+}
+.cantainer3 .card .content{
+    text-transform: capitalize;
+    text-align: center;
+    justify-content: center;
+    color: blueviolet;
+}
+.cantainer2 .card .image{
+    width: 100%;
+    height: 100%;
+}
+
+.cantainer2 .card .image img{
+    width: 300px;
+    height: 300px;
+}
+
+
+.cantainer3{
+    width: 100%;
+    height: 230px;
+    position: absolute;
+    top: 152%;
+    background: rgb(170, 219, 226);
+    left: 0;
+    display: flex;
+    overflow: hidden;
+}
+
+.cantainer3 label{
+    color: #000000;
+    letter-spacing: 1px;
+   text-transform: uppercase;
+    font-size: 25px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular';
+}
+
+.cantainer3 .card{
+    position: relative;
+    top: 20%;
+    left: -5%;
+    margin-left: 5px;
+    width: 200px;
+    height: 200px;
+    cursor: pointer;
+}
+
+.cantainer3 .card .image{
+    width: 100%;
+    height: 100%;
+}
+
+.cantainer3 .card .image img{
+    width: 150px;
+    height: 150px;
+}
+
+.prev
+{
+    position: absolute;
+    font-size: 30px;
+    width: 30px;
+    height: 70px;
+    background: black;
+    text-align: start;
+    justify-content: center;
+    margin-top: 50px;
+    padding-top: 20px;
+    color: red;
+    top: 158%;
+    left: 0;
+    cursor: pointer;
+}
+
+
+.next
+{
+    cursor: pointer;
+    position: absolute;
+    font-size: 30px;
+    width: 30px;
+    height: 70px;
+    background: black;
+    text-align: start;
+    justify-content: center;
+    margin-top: 50px;
+    padding-top: 20px;
+    padding-left: 10px;
+    color: red;
+    top: 158%;
+    right: 0;
+}
+
+
+
+.container4{
+    position: absolute;
+    width: 100%;
+    height: 400px;
+    background: rgb(79, 141, 131);
+    top:195%;
+    left: 0;
+}
+
+.container4 .content{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    
+}
+
+ 
+.container4 .content h1{
+    color: white;
+    text-align: center;
+    justify-content: center;
+    margin-top: 10%;
+    font-size: 35px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.container4 .content p{
+    width: 600px;
+    letter-spacing: 1px;
+    position: relative;
+    top: 5%;
+    left: 10%;
+    color: yellow;
+    height: auto;
+    font-family:'Times New Roman', Times, serif;
+   font-size: 15px;
+    text-transform:capitalize;
+}
+
+.container4 .card{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 400px;
+    height: 300px;
+    margin-right: 80px;
+    margin-top: 50px;
+    overflow: hidden;
+}
+.container4 .card .slider{
+    position: relative;
+width: 2000px;
+height: 300px;
+display: flex;
+animation: card 15s infinite;
+}
+
+.container4 button{
+    position: relative;
+    top: 5%;
+    left: 10%;
+    color: tomato;
+    background: lightblue;
+    font-size: 20px;
+    width: 120px;
+    height: 40px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.container4 button:hover
+{
+    background: rgb(42, 117, 238);
+    color: white;
+}
+
+@keyframes card{
+    0%{
+    left: 0px;    
+    }    
+    17%{
+        left:0px;
+    }
+    
+    34%{
+        left:-400px
+    }
+    51%{
+        left: -800px;
+    }
+    68%{
+        left:-1200px;
+    }
+    76%{
+        left: -1600px;
+    }
+    100%{
+        right:0px
+    }
+   
+}
+.container4 .card .slider img{
+    width: 400px;
+    height: 300px;
+}
+
+.girls-container{
+    position: absolute;;
+    top:266% ;
+    left: 0;
+    width: 100%;
+    height: 400px;
+    display: flex;
+}
+
+.girls-container label
+{
+    width: 100%;
+    position: absolute;
+    margin-top: 15px;
+    top: 0;
+    font-weight: bold;
+    font-size: 35px;
+    left: 0;
+    color: tomato;
+    justify-content: center;
+    text-align: center;
+}
+
+.girls-container label span{
+    color: violet;
+    letter-spacing: 2px;
+    font-size: 50px;
+    margin-left: 10px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+.girls-container .card{
+position: relative;
+top: 0;
+left: 0;
+margin-top: 80px;
+margin-left: 5px;
+width: 300px;
+height: 300px;
+background: yellowgreen;
+cursor: pointer;
+
+}
+
+
+.girls-container .card:hover img{
+    transform: scale(1.1);
+    transition: 0.5s;
+
+}
+
+.girls-container .card img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-size: cover;
+width: 300px;
+height: 300px;
+}
+
+
+.boys-container{
+    position: absolute;;
+    top:335% ;
+    left: 0;
+    width: 100%;
+    height: 400px;
+    display: flex;
+}
+
+.boys-container label
+{
+    width: 100%;
+    position: absolute;
+    margin-top: 15px;
+    top: 0;
+    font-weight: bold;
+    font-size: 35px;
+    left: 0;
+    color: tomato;
+    justify-content: center;
+    text-align: center;
+}
+
+.boys-container label span{
+    color: rgb(35, 104, 233);
+    letter-spacing: 2px;
+    font-size: 50px;
+    margin-left: 10px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+.boys-container .card{
+position: relative;
+top: 0;
+left: 0;
+margin-top: 80px;
+margin-left: 5px;
+width: 300px;
+height: 300px;
+background: yellowgreen;
+cursor: pointer;
+}
+
+
+.boys-container .card:hover img{
+    transform: scale(1.1);
+    transition: 0.5s;
+
+}
+
+
+.boys-container .card img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-size: cover;
+width: 300px;
+height: 300px;
+}
+
+.boys-container .card .btn{
+    z-index: 1;
+    position: absolute;
+    top: 90%;
+    left: 0;
+    width: 100%;
+    background: cornflowerblue;
+    height: 50px;
+    justify-content: center;
+    text-align: center;
+    padding-top: 10px;
+}
+
+
+.boys-container .card .btn a{
+    color: white;
+    width: 100%;
+    height: 100%;
+    font-size: 18px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.contact-container{
+    position: absolute;
+    top: 608%;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(160, 169, 224, 0.5);
+    display: flex;
+}
+
+
+.contact-container .card{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 350px;
+    height: 400px;
+    background: rgba(248, 244, 244, 0.603);
+    margin-top: 70px;
+    margin-left: 70px;
+    box-shadow: 0px 8px 25px 10px rgb(0,0,0,0.3);
+}
+
+
+.contact-container .card input{
+    position: relative;
+    top: 10%;
+    box-sizing: border-box;
+    margin-top: 15px;
+    font-size: 20px;
+    left: 10%;
+    width: 250px;
+    height: 50px;
+    outline: none;
+    background: none;
+    border: none;
+    border-bottom: 5px solid lightseagreen;
+}
+
+
+.contact-container .card h2{
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    text-transform: capitalize;
+    position: relative;
+    top: 10%;
+    left: 0;
+
+}
+.contact-container .card button{
+    position: relative;
+    top: 5%;
+    left: 12%;
+    justify-content: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 120px;
+    text-align: center;
+    margin: 50px;
+   height: 40px;
+   cursor: pointer;
+   background: crimson;
+   font-size: 20px;
+   outline: none;
+   color: lightcyan;
+}
+.contact-container img{
+    width: 500px;
+    height: 500px;
+    position: relative;
+    top: 0;
+    left: 16%;
+    right: 0;
+}
+
+
+.Android-mobile-container
+{
+    position: absolute;
+    top: 407%;
+    display: flex;
+    left: 0;
+    width: 100%;
+    height: 400px;
+    background: lightslategray;
+}
+
+
+.Android-mobile-container label
+{
+    width: 100%;
+    position: absolute;
+    margin-top: 15px;
+    top: 0;
+    font-weight: bold;
+    font-size: 35px;
+    left: 0;
+    color: tomato;
+    justify-content: center;
+    text-align: center;
+}
+
+.Android-mobile-container label span{
+    color: rgb(35, 104, 233);
+    letter-spacing: 2px;
+    font-size: 50px;
+    margin-left: 10px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+.Android-mobile-container .card{
+
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 300px;
+    background: rgb(29, 74, 92);
+    margin-top: 100px;
+    margin-left: 20px;
+    margin-right: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow:  0px 8px 25px 10px rgb(0,0,0,0.3);
+}
+
+.Android-mobile-container .card:hover .image{
+    transform: scale(1.2);
+    transition: all 0.5s;
+}
+
+
+.Android-mobile-container .card .image{
+    position: relative;
+    top: 0;
+    text-align: center;
+    justify-content: center;
+    left: 0;
+    margin-top: 25px;
+    width: 100%;
+    height: 100%;
+    background-size:cover;
+}
+
+.Android-mobile-container .card .image img{
+    width: 100%;
+    height: 250px;
+}
+
+.Android-mobile-container .card .content{
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    padding: 15px;
+    background: rgba(29, 29, 29, 0.5);
+    justify-content: center;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+}
+
+
+.Apple-mobile-container
+{
+    position: absolute;
+    top: 480%;
+    display: flex;
+    left: 0;
+    width: 100%;
+    height: 400px;
+    background: rgb(137, 187, 238);
+}
+
+
+.Apple-mobile-container label
+{
+    width: 100%;
+    position: absolute;
+    margin-top: 15px;
+    top: 0;
+    font-weight: bold;
+    font-size: 35px;
+    left: 0;
+    color: tomato;
+    justify-content: center;
+    text-align: center;
+}
+
+.Apple-mobile-container label span{
+    color: rgb(35, 104, 233);
+    letter-spacing: 2px;
+    font-size: 50px;
+    margin-left: 10px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+.Apple-mobile-container .card{
+
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 300px;
+    background: rgb(29, 74, 92);
+    margin-top: 100px;
+    margin-left: 20px;
+    margin-right: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow:  0px 8px 25px 10px rgb(0,0,0,0.3);
+}
+
+.Apple-mobile-container .card:hover .image{
+    transform: scale(1.2);
+    transition: all 0.5s;
+}
+
+
+.Apple-mobile-container .card .image{
+    position: relative;
+    top: 0;
+    text-align: center;
+    justify-content: center;
+    left: 0;
+    margin-top: 25px;
+    width: 100%;
+    height: 100%;
+    background-size:cover;
+}
+
+.Apple-mobile-container .card .image img{
+    width: 100%;
+    height: 250px;
+}
+
+.Apple-mobile-container .card .content{
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    padding: 15px;
+    background: rgba(29, 29, 29, 0.5);
+    justify-content: center;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+}
+
+
+marquee{
+    animation: animate 0.5s infinite ;
+}
+
+@keyframes animate{
+    0%{
+        color:red;
+    }
+
+    25%{
+        color:green;
+    }
+
+    50%{
+        color:blue;
+    }
+
+    100%{
+        color:white;
+    }
+
+}
+
+
+.login-form{
+    position: fixed;
+    top: 20%;
+    left: -100%;
+    background: rgb(255,255,255,0.4);
+    width: 400px;
+    height: 270px;
+    box-shadow: 0px 12px 25px 15px rgb(0,0,0,0.3);
+    border-radius: 8px;
+}
+
+.login-form  input{
+    position: relative;
+    top: 0%;
+    box-sizing: border-box;
+    margin-top: 15px;
+    font-size: 20px;
+    left: 10%;
+    width: 330px;
+    height: 50px;
+    outline: none;
+    background: none;
+    border: none;
+    border-bottom: 5px solid lightseagreen;
+}
+
+
+.login-form h2{
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    text-transform: capitalize;
+    position: relative;
+    padding-top: 8px;
+    height: 40px;
+    top: 0%;
+    left: 0;
+    background: royalblue;
+}
+
+.login-form  p{
+    padding-top: 5px;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+}
+
+
+.login-form  button{
+    position: relative;
+    top: 0%;
+    left: 32%;
+    justify-content: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 120px;
+    text-align: center;
+    margin-top: 15px;
+   height: 40px;
+   cursor: pointer;
+   background: royalblue;
+   font-size: 20px;
+   outline: none;
+   color: lightcyan;
+}
+#loginData.active{
+    left:37%;
+    transition: 0.5s;
+   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+@media(max-width:1048px){
+    .navbar .bname{
+        font-size: 25px;
+        padding-left: 40px;
+    }
+
+    .navbar .nav-items ul li{
+        margin-right: 5px;
+    }
+}
+
+
+@media(max-width:750px)
+{
+    .navbar .bname{
+        display: block;
+    }
+
+    .navbar .nav-items ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: rgb(19, 19, 47);
+        top: 60px;
+        left: -100%;
+        text-align: center;
+        transition: all 0.5s;
+    }
+
+    .navbar .nav-items ul li{
+       display: block;
+       width: 100%;
+    }
+    .navbar .nav{
+        display: block;
+    }
+    .navbar .search{
+        margin-left: 200px;
+    }
+
+    .navbar .nav-items ul.show{
+        left: 0;
+    }
+
+    .container{
+        top: 10%;
+    }
+    marquee{
+        position: absolute;
+        width: 100%;
+        height: 50px;
+        top: 40%;
+        left: 0;
+    }
+
+}
+
+
+@media(max-width:750px)
+{
+    .cantainer2{
+        width: 100%;
+        height: auto;
+        display: block;
+        top: 50%;
+    }
+    .cantainer2 label{
+        width: 100%;
+        font-weight: 50px;
+        color: chocolate;
+    }
+    .cantainer2 .card{
+        width: 100%;
+        height: auto;
+        top: 40%;
+        margin-top: 20px;
+    }
+    .cantainer2 .card .image img{
+       width: 100%;
+       height: auto;
+    }
+
+    .cantainer3{
+        top: 360%;
+    }
+
+    .container4{
+        width: 100%;
+        height: auto;
+        display: block;
+        top: 390%;
+        box-sizing: border-box;
+    }
+
+    .container4 .content h1{
+        margin-top: 10px;
+    }
+
+    .container4 .content{
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+    }
+
+    .container4 .content p{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: auto;
+    }
+
+    .container4 .card{
+        width: 100%;
+        position: relative;      
+    }
+
+    .girls-container{
+        top: 465%;
+        width: 100%;
+        height: auto;
+       display: block;
+    }
+
+    .girls-container .card{
+    width: 100%;
+    height: 600px;
+    margin: 8px;
+    }
+    .girls-container .card img{
+        width: 100%;
+        height: 600px;
+    }
+
+    .girls-container label
+    {
+        margin: 0;
+    }
+    
+    .boys-container{
+        top: 825%;
+        width: 100%;
+        height: auto;
+       display: block;
+    }
+
+    .boys-container .card{
+    width: 100%;
+    height: 400px;
+    }
+    .boys-container .card img{
+        width: 100%;
+        height: 600px;
+    }
+} 

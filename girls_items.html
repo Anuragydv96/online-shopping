@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Girls fashion</title>
+    <link rel="stylesheet" href="girls.css">
+
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="image">
+                <img src="suits.jpeg" alt="">
+            </div>
+        </div>
+        <div class="content">
+            <h2>Suits</h2>
+            <p>this items belongs to <br> suits. </p>
+            <h5>size :M</h5>
+            <h5>color:blue</h5>
+            <h5 id="price2">2000 </h5>
+        </div>
+        <div class="add-items">
+            <p>Add items</p>
+            <button onclick="decrement('textbox2','price2')">-</button>
+            <input type="text"  value="0" id="textbox2">
+            <button onclick="increment('textbox2','price2')">+</button>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="card">
+            <div class="image">
+                <img src="pexels-nripen-kumar-roy-725458.jpg" alt="">
+            </div>
+        </div>
+        <div class="content">
+            <h2>Suits</h2>
+            <p>this items belongs to <br> suits. </p>
+            <h5>size :M</h5>
+            <h5>color:blue</h5>
+            <h5 id="price1">1150 </h5>
+        </div>
+        <div class="add-items">
+            <p>Add items</p>
+            <button onclick="decrement('textbox1','price1')">-</button>
+            <input type="text" value="0" id="textbox1">
+            <button onclick="increment('textbox1','price1')">+</button>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="card">
+            <div class="image">
+                <img src="pexels-snapwire-116150.jpg" alt="">
+            </div>
+        </div>
+        <div class="content">
+            <h2>Suits</h2>
+            <p>this items belongs to <br> suits. </p>
+            <h5>size :M</h5>
+            <h5>color:blue</h5>
+            <h5 id="price">800 </h5>
+        </div>
+        <div class="add-items">
+            <p>Add items</p>
+            <button onclick="decrement('textbox','price')">-</button>
+            <input type="text"  value="0" id="textbox">
+            <button onclick="increment('textbox','price')">+</button>
+        </div>
+    </div>
+
+    <div class="final">
+
+        <h2>The total Amount of -</h2>
+        <p>product ammount <span>0 rs.</span></p>
+        <p>shipping ammount <span>0 rs.</span></p>
+
+        <div class="border"></div>
+
+        <div class="final-price">
+           <p>the total price is : <span>0rs.</span></p>
+        </div>
+    </div>
+
+
+    <script>
+
+        const increment = (data,rate) =>
+        {
+
+           var textval =document.getElementById(data);
+           var rate = document.getElementById(rate);
+           if(textval.value>=10)
+           {
+            textval.value =10;
+            alert("can not ordered maximum 10 product");
+            textval.style.background="red";
+           }else{
+            textval.value = parseInt(textval.value)+1;
+            rate.innerHTML=parseInt(rate.innerHTML)+800;
+            console.log(rate.innerHTML);
+           }
+        }
+
+        const decrement = (data,rate) =>
+        {
+            var textval = document.getElementById(data);
+            var rate = document.getElementById(rate);
+           // console.log(textval.value);
+            if(textval.value<=0)
+            {
+                // alert("item can not take ordered")
+                textval.value =0;
+            }else{
+                textval.value = parseInt(textval.value)-1;
+                textval.style.background="#fff";
+                rate.innerHTML=parseInt(rate.innerHTML)-800;
+            }
+               }
+
+         //   console.log("decreased");
+        
+
+
+
+
+    </script>
+
+
+
+
+    
+</body>
+</html>
